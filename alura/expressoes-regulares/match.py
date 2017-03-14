@@ -23,3 +23,10 @@ print result
 result = re.findall('\wy\w+','Python ou Rython ou 9ython')
 print result
 
+def procurar_regex(nomes):
+    print('Digite a expressão regular')
+    regex = raw_input()
+    nomes_concatenados = ' '.join(nomes)
+    resultado = re.findall(regex, nomes_concatenados)
+    print resultado
+	
